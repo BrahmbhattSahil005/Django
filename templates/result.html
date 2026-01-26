@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students result</title>
+</head>
+<body>
+    <h2>enter marks</h2>
+    <form method="post">
+        {% csrf_token %}
+        subject 1:<input type="number" name="s1"><br><br>
+        subject 2:<input type="number" name="s2"><br><br>
+        subject 3:<input type="number" name="s3"><br><br>
+
+        <button type="submit">check result</button>
+
+    </form>
+    <h3>result:{{result}}</h3>
+    <h3>percentage:{{percentage}}</h3>
+    <h3>grade:{{grade}}</h3>
+    
+</body>
+</html>

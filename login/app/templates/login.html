@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body { font-family: Arial; max-width: 400px; margin: 60px auto; }
+        .form-group { margin: 20px 0; }
+        input { width: 100%; padding: 10px; font-size: 16px; }
+        button { padding: 12px 30px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background: #45a049; }
+        h2 { text-align: center; }
+    </style>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    <div class="form-group">
+        <label>Name:</label><br>
+        <input type="text" name="name" required placeholder="mohit / rohit / sujal">
+    </div>
+
+    <div class="form-group">
+        <label>Password:</label><br>
+        <input type="password" name="password" required placeholder="••••••••">
+    </div>
+
+    <button type="submit">Login</button>
+</form>
+
+</body>
+</html>
+
+</body>
+</html>
+    
+</body>
+</html>
